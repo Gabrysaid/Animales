@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Servidor PHP</title>
+</head>
+<body>
+	<form action="datos.php" method="post">
+		<input type="text" name="cedula" placeholder="Cedula">
+		<input type="text" name="nombre" placeholder="Nombre">
+		<input type="text" name="apellidos" placeholder="Apellidos">
+		<button type="submit" name="enviar">Enviar</button> 
+	</form>
+	<table>
+		<thead>
+			<th>Cedula</th>
+			<th>Nombre</th>
+			<th>Apellidos</th>
+		</thead>
+		<tbody>
+			<?=cargarTabla($conexion);?>
+		</tbody>
+	</table>
+</body>
+</html>

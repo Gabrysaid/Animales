@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="estilos.css">
+	<link rel="stylesheet" type="text/css" href="estilosmemorama.css">
+	<title>Los Animales</title>
+</head>
+<body>
+	<nav id="menu">
+		<a href="#introduccion">Introducción</a>
+		<a href="#memorama">Memorama</a>
+		<a href="#3">Animales Salvajes</a>
+		<a href="#4">Aves</a>
+		<a href="#5">Tipos de aves</a>
+		<a href="#6">Animales Domésticos</a>
+		<span class="indicador" id="indicador"></span>
+	</nav>
+
+	<div class="secciones">
+		<div class="seccion">
+			<div class="card" id="introduccion">
+				<p>El tema que a continuación trataremos “animales salvajes y domésticos”, tiene como fin que niños y niñas aprendan a diferenciar que animales pueden vivir con nosotros y domesticarse y cuales son salvajes y no pueden estar bajo nuestro cuidado. Utilizaremos algunas herramientas tecnológicas para facilitar los contenidos.
+				!Niños! ¿¿Están listos para conocer sobre los animales?? </p>
+			</div>
+		</div>
+
+		<div class="seccion">
+			<div class="card" id="memorama">
+				<main>
+					<section class="section1">
+						<h1>Juego de Memoria</h1>
+							<table>
+								<tr>
+									<td><button id="0" onclick="destapar(0)"></button></td>
+									<td><button id="1" onclick="destapar(1)"></button></td>
+									<td><button id="2" onclick="destapar(2)"></button></td>
+									<td><button id="3" onclick="destapar(3)"></button></td>
+								</tr>
+								<tr>
+									<td><button id="4" onclick="destapar(4)"></button></td>
+									<td><button id="5" onclick="destapar(5)"></button></td>
+									<td><button id="6" onclick="destapar(6)"></button></td>
+									<td><button id="7" onclick="destapar(7)"></button></td>
+								</tr>
+								<tr>
+									<td><button id="8" onclick="destapar(8)"></button></td>
+									<td><button id="9" onclick="destapar(9)"></button></td>
+									<td><button id="10" onclick="destapar(10)"></button></td>
+									<td><button id="11" onclick="destapar(11)"></button></td>
+								</tr>
+								<tr>
+									<td><button id="12" onclick="destapar(12)"></button></td>
+									<td><button id="13" onclick="destapar(13)"></button></td>
+									<td><button id="14" onclick="destapar(14)"></button></td>
+									<td><button id="15" onclick="destapar(15)"></button></td>
+								</tr>
+							</table>
+					</section>
+					<section class="section2">
+						<h2 id="aciertos" class="estadisticas">Aciertos: 0</h2>
+						<h2 id="t-restante" class="estadisticas">Tiempo: 40 segundos </h2>
+						<h2 id="movimientos" class="estadisticas">Movimientos: 0</h2>
+					</section>
+					
+				</main>
+			</div>
+		</div>
+
+		<div class="seccion" id="3">
+			<div class="card">
+				<h1>¿Que son los animales salvajes?</h1>
+				<div class="container">
+					<div class="box">
+						<audio id="leon" src="Sonidos/leon.mp3"></audio>
+						<img src="Animales/leon.jpg" onclick="sonar('leon')">
+						<span>LEÓN</span>
+					</div>
+					<div class="box">
+						<audio id="jirafa" src="Sonidos/jirafa.mp3"></audio>
+						<img src="Animales/jirafa.jpg" onclick="sonar('jirafa')">
+						<span>JIRAFA</span>
+					</div>
+					<div class="box">
+						<audio id="cebra" src="Sonidos/cebra.mp3"></audio>
+						<img src="Animales/cebra.jpg" onclick="sonar('cebra')">
+						<span>CEBRA</span>
+					</div>
+					<div class="box">
+						<audio id="tigre" src="Sonidos/tigre.mp3"></audio>
+						<img src="Animales/tigre.jpg" onclick="sonar('tigre')">
+						<span>TIGRE</span>
+					</div>
+					<div class="box">
+						<audio id="zorro" src="Sonidos/zorro.mp3"></audio>
+						<img src="Animales/zorro.jpg" onclick="sonar('zorro')">
+						<span>ZORRO</span>
+					</div>
+					<div class="box">
+						<audio id="lobo" src="Sonidos/lobo.mp3"></audio>
+						<img src="Animales/lobo.jpg" onclick="sonar('lobo')">
+						<span>LOBO</span>	
+					</div>
+				</div>
+				<p>Los animales salvajes viven libres en el mar, en el aire, en los ríos ,en las montañas, en los bosques , en la selva, en el desierto... ellos se tienen que buscar el alimento y se defienden de otros animales . Cada animal vive en el lugar donde sabe que puede encontrar más fácilmente la comida para sus crías y para él. </p>
+			</div>
+		</div>
+
+		<div class="seccion" id="4">
+			<div class="card">
+				<h1>¿Que son las aves?</h1>
+				<img src="aves.jpg" alt="">
+				<p>Las aves son animales vertebrados generalmente adaptados al vuelo, aunque muchos también pueden correr, saltar, nadar y bucear. Algunos, como los pingüinos, han perdido la capacidad de volar, pero conservaron sus alas como vestigio. </p>
+			</div>
+		</div>
+
+		<div class="seccion" id="5">
+			<div class="card">
+				
+				<main class="main">
+					<h1 class="title">Tipos de aves</br></h1>
+
+					<section class="gallery">
+						<figure class="gallery__picture gallery__picture--g1">
+							<img src="Animales/img1.jpg" class="gallery__img">
+						</figure>
+
+						<figure class="gallery__picture gallery__picture--g2">
+							<img src="Animales/img2.jpg" class="gallery__img">
+						</figure>
+
+						<figure class="gallery__picture gallery__picture--g3">
+							<img src="Animales/img3.jpg" class="gallery__img">
+						</figure>
+
+						<figure class="gallery__picture gallery__picture--g4">
+							<img src="Animales/img4.jpg" class="gallery__img">
+						</figure>
+
+						<figure class="gallery__picture gallery__picture--g5">
+							<img src="Animales/img5.jpg" class="gallery__img">
+						</figure>
+
+						<figure class="gallery__picture gallery__picture--g6">
+							<img src="Animales/img6.jpg" class="gallery__img">
+						</figure>
+
+						<figure class="gallery__picture gallery__picture--g7">
+							<img src="Animales/img7.jpg" class="gallery__img">
+						</figure>
+
+					</section>
+				</main>
+				<p>Hay varios modelos de clasificación para las aves. Uno de ellos consta de 2 tipos de aves:</br>
+
+				Corredoras. No pueden volar, tienen alas pequeñas y largas patas, y su esternón no tiene forma de quilla. Por ejemplo, el avestruz y el pingüino.
+				De vuelo. Tienen las patas cortas, alas de gran envergadura para volar, y el esternón en forma de quilla.</br>
+
+				Pero esta clasificación es muy amplia. Otra mucho más específica incluye los tipos de aves siguientes:</br>
+
+				Rapaces. Tienen grandes garras y picos afilados. Por ejemplo: el águila, el halcón, el cernícalo, el búho y la lechuza.</br>
+
+				Pájaros. Son pequeños y muy ligeros (con excepciones). Se caracterizan por emitir sonidos muy peculiares. A este grupo pertenecen los gorriones, el cuervo, la golondrina, el atrapamoscas, etc. Para muchos, resultan las mejores aves domésticas.</br>
+
+				Corredoras. Grandes y veloces, pero incapaces de volar. Por ejemplo, el avestruz, el casuario y el ñandú.</br>
+
+				Zancudas. Son esbeltas desde las patas hasta el pico, con cuello largo. Entre ellas figuran la grulla, la cigüeña, la garza y otras similares.</br>
+
+				Gallináceas. Patas robustas, alas pequeñas y un pico corto pero fuerte. Aquí tenemos la gallina, el codorniz, el faisán, etc.</br>
+
+				Anseriformes. Incluye a los patos, cines, gansos, ocas y otras aves con pico aplanado y patas membranosas para nadar.</br>
+
+				Esfenisciformes. No pueden volar, pero son excelentes nadadoras pues en lugar de patas tienen aletas. Como ejemplos de este tipo de aves están los pájaros bobos y el pingüino.</p>
+			</div>
+		</div>
+
+		<div class="seccion" id="6">
+			<div class="card">
+				<h1>¿Que son los animales domésticos?</h1>
+				<img src="animales_domesticos.jpg" alt="">
+				<p> animales domésticos son los que han dejado su hábitat salvaje y han aprendido a vivir junto al hombre. Para hacerlo posible, fue necesario que pasaran por algo que se conoce como domesticación. Este es un proceso que tiene el objetivo de acostumbrar al animal al ser humano, su entorno y las actividades que realiza. </p>
+			</div>
+		</div>
+	</div>
+	<script src="main.js"></script>
+	<script src="menu.js"></script>
+</body>
+</html>
